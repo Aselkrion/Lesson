@@ -7,7 +7,7 @@ public class Main {
         System.out.print("Количество ядер процессора: ");
         System.out.println(Runtime.getRuntime().availableProcessors());
         System.out.print("Количество памяти, доступной JVM: ");
-        System.out.println(Runtime.getRuntime().maxMemory() + "Mb");
+        System.out.println(Runtime.getRuntime().maxMemory() / 1024 / 1024 + "Mb");
         System.out.print("Свободная память: ");
         System.out.println(Runtime.getRuntime().freeMemory() / 1024 / 1024 + "Mb");
         System.out.print("Вся память: ");
