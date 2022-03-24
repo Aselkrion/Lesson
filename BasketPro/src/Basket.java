@@ -65,8 +65,10 @@ public class Basket {
 
     public static String info() {
         return getListAllBasket() + "\n================================"
-                + "\nОбщее количество корзин: " + getCountBasket() + " кол."
-                + "\nОбщее количество товаров: " + getCountProductAllBasket() + " кол."
-                + "\nОбщая стоимость товаров: " + getPriceProductAllBasket() + " руб.";
+                + "\nОбщее количество корзин: " + getCountBasket() + " шт."
+                + "\nОбщее количество товаров: " + getCountProductAllBasket() + " шт."
+                + "\nОбщая стоимость товаров: " + getPriceProductAllBasket() + " руб."
+                + "\nCредняя стоимость корзины: " + getPriceProductAllBasket() / getCountBasket() + " руб."
+                + "\nCредняя стоимость товара: " + getPriceProductAllBasket() / getCountProductAllBasket() + " руб.";
     }
 }
